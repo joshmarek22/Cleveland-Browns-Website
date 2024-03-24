@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cleveland Browns Fan Hub</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="Pictures/helmetLogo.webp" alt="Logo" title="Browns Logo">
+      </div>
+      <div class="title">    
+        <h1 class="header-title">Cleveland Browns Fan Hub</h1>
+      </div>
+    </div>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="roster.html">Active Roster</a></li>
+          <li><a href="teamPics.html">Team Pics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+
+<main class="news-content">
+  <h1 class="news-headline">Cleveland Browns News</h1>
+
+    <div id="newsContainer" class="newsContainer"></div>
+    <div id="newsTemplate" style="display: none;">
+      <div class="news-box">
+      <h3 class="news-headline" id="news-headline-placeholder"></h3>
+      <div class="news-image">
+          <img src="" alt="" title="">
+      </div>
+      <p class="news-info" id="news-info-placeholder"></p>
+      <a href="" id="news-Link" target="_blank">Read more here!</a>
+    </div>
+    </div>
+
+</main>
+
+<footer>
+  <h1>Follow the Team Here</h1>
+  <div class="social-links">
+  <ul>
+    <li><a href="https://www.instagram.com/clevelandbrowns/" target="_blank"><img src="Pictures/Instagram.svg" alt="Instrgram link logo" class="teamSocialsPictures" title="Instagram logo"></a></li>
+    <li><a href="https://twitter.com/Browns" target="_blank"><img src="Pictures/Twitter.svg" alt="Twitter link logo" class="teamSocialsPictures" title="Twitter Logo"></a></li>
+    <li><a href="https://www.youtube.com/Browns" target="_blank"><img src="Pictures/YouTube.svg" alt="Youtube link logo" class="teamSocialsPictures" title="Youtube Logo"></a></li>
+    <li><a href="https://www.tiktok.com/@browns" target="_blank"><img src="Pictures/tiktok.svg" alt="TikTok link logo" class="teamSocialsPictures" title="TikTok Logo"></a></li>
+    <li><a href="https://www.facebook.com/clevelandbrowns/" target="_blank"><img src="Pictures/Facebook.svg" alt="Facebook link logo" class="teamSocialsPictures" title="Facebook Logo"></a></li>
+  </ul>
+  </div>
+</footer>
+
+
+<script src="newsCards.js"></script>
+</body>
+</html>

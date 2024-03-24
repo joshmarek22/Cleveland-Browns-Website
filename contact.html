@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Cleveland Browns Fan Hub</title>
+</head>
+<body>
+  <header>
+    <div class="header">
+      <div class="logo">
+        <img src="Pictures/helmetLogo.webp" alt="Logo" title="Browns Logo">
+      </div>
+      <div class="title">    
+        <h1 class="header-title">Cleveland Browns Fan Hub</h1>
+      </div>
+    </div>
+    <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="roster.html">Active Roster</a></li>
+          <li><a href="teamPics.html">Team Pics</a></li>
+          <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div id="contact-page-wrapper">
+      <h1>Contact Us</h1>
+      <form id="contactForm" onsubmit="input(event)">
+          <fieldset>
+              <legend class="feedback-text">Please provide your feedback</legend>
+
+              <label for="first-name">First Name:</label>
+              <input type="text" id="first-name" required><br><br>
+
+              <label for="last-name">Last Name:</label>
+              <input type="text" id="last-name" required><br><br>
+
+              <label for="email">Email:</label>
+              <input type="email" id="email" required><br><br>
+
+              <label for="message">Questions, Comments, or Concerns:</label><br>
+              <textarea id="message" rows="5" cols="33" required></textarea>
+              <br>
+              <br>
+
+              <input type="submit" value="Submit" class="contact-submit-button">
+          </fieldset>
+      </form>
+  </div>
+  </main>
+
+  <footer>
+    <h1>Follow the Team Here</h1>
+    <div class="social-links">
+    <ul>
+      <li><a href="https://www.instagram.com/clevelandbrowns/" target="_blank"><img src="Pictures/Instagram.svg" alt="Instrgram link logo" class="teamSocialsPictures" title="Instagram logo"></a></li>
+      <li><a href="https://twitter.com/Browns" target="_blank"><img src="Pictures/Twitter.svg" alt="Twitter link logo" class="teamSocialsPictures" title="Twitter Logo"></a></li>
+      <li><a href="https://www.youtube.com/Browns" target="_blank"><img src="Pictures/YouTube.svg" alt="Youtube link logo" class="teamSocialsPictures" title="Youtube Logo"></a></li>
+      <li><a href="https://www.tiktok.com/@browns" target="_blank"><img src="Pictures/tiktok.svg" alt="TikTok link logo" class="teamSocialsPictures" title="TikTok Logo"></a></li>
+      <li><a href="https://www.facebook.com/clevelandbrowns/" target="_blank"><img src="Pictures/Facebook.svg" alt="Facebook link logo" class="teamSocialsPictures" title="Facebook Logo"></a></li>
+    </ul>
+    </div>
+  </footer>
+
+
+    <script>
+      function input(){
+        event.preventDefault(); //prevents website from reloading after form submitting
+
+        var firstName = document.getElementById("first-name").value; //gets input text from firstname text box in form by getting the value of the ID 
+        alert("Hello " + firstName + "! Your feedback has been recived!"); //sends alert message when form submitted
+      }
+    </script>
+
+
+</body>
+</html>
